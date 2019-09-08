@@ -5,8 +5,8 @@ from flask import Flask, render_template, send_from_directory
 
 app = Flask(
     __name__,
-    static_folder='../build/static',
-    template_folder='../build'
+    static_folder='build/static',
+    template_folder='build'
 )
 # app.config.from_object('config')
 
@@ -19,7 +19,7 @@ def index():
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(
-        os.path.join(app.root_path, '../build/static'),
+        os.path.join(app.root_path, 'build/static'),
         'favicon.ico',
         mimetype='image/vnd.microsoft.icon'
     )
