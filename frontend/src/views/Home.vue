@@ -1,18 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <section class="hero is-fullheight" style="background-color: #fdf6e3;">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title" style="color: #657b83;">
+            indicator.org
+          </h1>
+          <h2 class="subtitle" style="color: #657b83;">
+            coming soon...
+          </h2>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
-</script>
