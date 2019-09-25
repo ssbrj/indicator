@@ -1,17 +1,17 @@
 <template>
-  <b-navbar class="has-shadow has-text-weight-bold" id="navbar-border-top" fixed-top>
+  <b-navbar class="has-shadow has-text-weight-bold" fixed-top>
     <template slot="brand">
       <b-navbar-item href="/">
         <img
-          src="static/indicator-logo.png"
+          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
         >
       </b-navbar-item>
     </template>
     <template slot="start">
-      <b-navbar-item id="navbar-search">
+      <b-navbar-item>
         <b-field>
-          <b-input style="width: 35em;"
+          <b-input style="width: 30em;"
             type="search"
             icon="magnify">
           </b-input>
@@ -20,7 +20,7 @@
     </template>
     <template slot="end">
       <b-navbar-item href="#">
-        Indicators
+        Home
       </b-navbar-item>
       <b-navbar-item href="#">
         About
@@ -41,5 +41,5 @@ export default {
   props: {
     msg: String
   }
-}
+};
 </script>

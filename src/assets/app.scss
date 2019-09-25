@@ -1,9 +1,77 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-// Set your colors
-$primary: #8c67ef;
+// Colors
+
+
+/*
+Palette 7
+$primary-text: #625D52;
+$secondary-text: #B8B2A7;
+$hover-text: #504A40;
+$border: #E8E6E1;
+$background: #FAF9F7;
+$background-secondary: #E8E6E1;
+$input: #E8E6E1;
+$secondary-input: #DCEEFB;
+$headline: #003E6B;
+$lead-text: #0F609B;
+$secondary-text: #0A558C;
+$selected: #186FAF;
+$fill: #FFFFFF;
+
+$line-primary: #4098D7;
+$line-secondary: #D3CEC4;
+
+$banner-primary: #4098D7;
+$banner-secondary: #62B0E8;
+
+$pip1: #E9B949;
+$pip2: #2CB1BC;
+*/
+
+/*
+// Palette 9
+$primary-text: #52606D;
+$secondary-text: #9AA5B1;
+$hover-text: #3E4C59;
+$hover-background: #E4E7EB;
+$border: #E4E7EB;
+$background: #F5F7FA;
+$background-footer: #E4E7EB;
+$input: #E4E7EB;
+$headline: #035388;
+$lead-text: #127FBF;
+$secondary-input: #E3F8FF;
+$secondary-input-text: #0B69A3;
+$selected: #1992D4;
+$fill: #FFFFFF;
+
+$line-primary: #4098D7;
+$line-secondary: #D3CEC4;
+
+$banner-primary: #3E4C59;
+$banner-secondary: #62B0E8;
+
+$pip1: #FADB5F;
+$pip2: #F364A2;
+*/
+
+$background: #F5F7FA;
+$background-hover: #E4E7EB;
+$background-footer: #E4E7EB;
+$text-primary: #52606D;
+$text-hover: #3E4C59;
+$text-footer: #3E4C59;
+$text-secondary-orange-vivid: #F35627;
+$text-secondary-light-blue-vivid: #2BB0ED;
+$text-secondary-cyan-vivid: #1CD4D4;
+$text-secondary-purple-vivid: #8719E0;
+$text-secondary-yellow-vivid: #F0B429;
+
+$primary: #1CD4D4;
 $primary-invert: findColorInvert($primary);
+
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
@@ -25,6 +93,26 @@ $colors: (
 $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
+
+// Nav
+$navbar-background-color: $background;
+$navbar-box-shadow-color: $background-hover;
+$navbar-item-color: $text-primary;
+$navbar-item-hover-color: $text-hover;
+$navbar-item-hover-background-color: $background-hover;
+
+#navbar-border-top {
+    border-top: 1px solid $primary;
+}
+
+#navbar-search:hover, #navbar-search:focus-within, #navbar-search:active {
+    background-color: $background;
+}
+
+// Footer
+$footer-background-color: $background-footer;
+$footer-color: $text-footer;
+
 
 // Import Bulma and Buefy styles
 @import "~bulma";
