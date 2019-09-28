@@ -4,7 +4,7 @@
       <b-navbar-item href="/">
         <img
           src="static/indicator-logo.png"
-          alt="Lightweight UI components for Vue.js based on Bulma"
+          alt="x"
         >
       </b-navbar-item>
     </template>

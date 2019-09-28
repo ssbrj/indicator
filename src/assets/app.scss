@@ -2,97 +2,36 @@
 @import "~bulma/sass/utilities/_all";
 
 // Colors
-
-
-/*
-Palette 7
-$primary-text: #625D52;
-$secondary-text: #B8B2A7;
-$hover-text: #504A40;
-$border: #E8E6E1;
-$background: #FAF9F7;
-$background-secondary: #E8E6E1;
-$input: #E8E6E1;
-$secondary-input: #DCEEFB;
-$headline: #003E6B;
-$lead-text: #0F609B;
-$secondary-text: #0A558C;
-$selected: #186FAF;
-$fill: #FFFFFF;
-
-$line-primary: #4098D7;
-$line-secondary: #D3CEC4;
-
-$banner-primary: #4098D7;
-$banner-secondary: #62B0E8;
-
-$pip1: #E9B949;
-$pip2: #2CB1BC;
-*/
-
-/*
-// Palette 9
-$primary-text: #52606D;
-$secondary-text: #9AA5B1;
-$hover-text: #3E4C59;
-$hover-background: #E4E7EB;
-$border: #E4E7EB;
-$background: #F5F7FA;
-$background-footer: #E4E7EB;
-$input: #E4E7EB;
-$headline: #035388;
-$lead-text: #127FBF;
-$secondary-input: #E3F8FF;
-$secondary-input-text: #0B69A3;
-$selected: #1992D4;
-$fill: #FFFFFF;
-
-$line-primary: #4098D7;
-$line-secondary: #D3CEC4;
-
-$banner-primary: #3E4C59;
-$banner-secondary: #62B0E8;
-
-$pip1: #FADB5F;
-$pip2: #F364A2;
-*/
-
 $background: #F5F7FA;
 $background-hover: #E4E7EB;
-$background-footer: #E4E7EB;
 $text-primary: #52606D;
-$text-hover: #3E4C59;
-$text-footer: #3E4C59;
-$text-secondary-orange-vivid: #F35627;
-$text-secondary-light-blue-vivid: #2BB0ED;
-$text-secondary-cyan-vivid: #1CD4D4;
-$text-secondary-purple-vivid: #8719E0;
-$text-secondary-yellow-vivid: #F0B429;
+$text-hover: #323F4B;
+$text-secondary: #9AA5B1;
+
+$footer-background: #F5F7FA;
+$footer-text: #52606D;
 
 $primary: #1CD4D4;
 $primary-invert: findColorInvert($primary);
+$primary-text: #07818F;
+$primary-text-invert: findColorInvert($primary-text);
+
+$tlp-red: #cd0033;
+$tlp-red-invert: findColorInvert($tlp-red);
+$tlp-amber: #ffc000;
+$tlp-amber-invert: findColorInvert($tlp-amber);
+$tlp-green: #33ff00;
+$tlp-green-invert: findColorInvert($tlp-green);
+$tlp-white: #ffffff;
+$tlp-white-invert: findColorInvert($tlp-white);
 
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
-// Setup $colors to use as bulma classes (e.g. 'is-twitter')
-$colors: (
-    "white": ($white, $black),
-    "black": ($black, $white),
-    "light": ($light, $light-invert),
-    "dark": ($dark, $dark-invert),
-    "primary": ($primary, $primary-invert),
-    "info": ($info, $info-invert),
-    "success": ($success, $success-invert),
-    "warning": ($warning, $warning-invert),
-    "danger": ($danger, $danger-invert),
-    "twitter": ($twitter, $twitter-invert)
-);
-
 // Links
-$link: $primary;
+$link: $primary-text;
 $link-invert: $primary-invert;
-$link-focus-border: $primary;
+$link-focus-border: $primary-text;
 
 // Nav
 $navbar-background-color: $background;
@@ -101,6 +40,29 @@ $navbar-item-color: $text-primary;
 $navbar-item-hover-color: $text-hover;
 $navbar-item-hover-background-color: $background-hover;
 
+// Footer
+$footer-background-color: $footer-background;
+$footer-color: $footer-text;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert),
+
+    "primary": ($primary, $primary-invert),
+    "tlp-red": ($tlp-red, $tlp-red-invert),
+    "tlp-amber": ($tlp-amber, $tlp-amber-invert),
+    "tlp-green": ($tlp-green, $tlp-green-invert),
+    "tlp-white": ($tlp-white, $tlp-white-invert)
+);
+
 #navbar-border-top {
     border-top: 1px solid $primary;
 }
@@ -108,11 +70,6 @@ $navbar-item-hover-background-color: $background-hover;
 #navbar-search:hover, #navbar-search:focus-within, #navbar-search:active {
     background-color: $background;
 }
-
-// Footer
-$footer-background-color: $background-footer;
-$footer-color: $text-footer;
-
 
 // Import Bulma and Buefy styles
 @import "~bulma";

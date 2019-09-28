@@ -7,7 +7,7 @@
             indicator.org
           </h1>
 
-          <section class="hero is-primary is-medium">
+          <section class="hero is-medium">
             <div class="hero-body">
               <div class="container">
                 <h1 class="title">
@@ -78,7 +78,8 @@ hjgjhghjghjg
             <span style="color: #1CD4D4;">i</span>nd<span style="color: #1CD4D4;">i</span>cator<br />
             <span style="color: #3AE7E1;">i</span>nd<span style="color: #3AE7E1;">i</span>cator
           </h1>
-          <h1 class="title has-text-weight-bold" style="background-color: #ffffff; color: #323F4B; padding: 20px;">
+          <h1 class="title has-text-weight-bold" style="background-color: #ffffff; color: #52606D; padding: 20px;">
+            <span style="color: #0FB5BA;">i</span>nd<span style="color: #0FB5BA;">i</span>cator<br />
             <span style="color: #1CD4D4;">i</span>nd<span style="color: #1CD4D4;">i</span>cator<br />
             <span style="color: #3AE7E1;">i</span>nd<span style="color: #3AE7E1;">i</span>cator
           </h1>
